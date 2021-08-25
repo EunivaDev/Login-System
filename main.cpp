@@ -14,8 +14,8 @@ the system will return their personal information.
 using namespace std;
 using namespace kttools;
 
-void Register();
-void Login();
+void mainRegister();
+void mainLogin();
 
 int main()
 {
@@ -36,8 +36,8 @@ int main()
         switch (option)
         {
         case 0: break;
-        case 1: system("cls"); Register(); break;
-        case 2: system("cls"); Login(); break;
+        case 1: system("cls"); mainRegister(); break;
+        case 2: system("cls"); mainLogin(); break;
         }
 
         cout << endl;
@@ -52,13 +52,12 @@ int main()
     return 0;
 }
 
-void Register()
+void mainRegister()
 {
-
-    cout << "TESTING REGISTER" << endl;
+    
 }
 
-void Login()
+void mainLogin()
 {
     cout << "TESTING LOGIN" << endl;
 }
