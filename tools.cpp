@@ -5,6 +5,8 @@
 #include <iostream>
 #include <time.h>
 
+#include "tools.h"
+
 using namespace std;
 
 namespace kttools
