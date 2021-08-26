@@ -3,8 +3,6 @@
 #ifndef TOOLS_H
 #define TOOLS_H
 
-#include <string>
-
 using namespace std;
 
 namespace kttools
@@ -24,6 +22,13 @@ namespace kttools
     string getLine(string prompt);
 
     int randomInt(int low, int high);
+
+    bool isUppercase(char c);
+    bool isLowercase(char c);
+    bool isDigit(char c);
+    bool isLetter(char c);
+
+
 }
 
 

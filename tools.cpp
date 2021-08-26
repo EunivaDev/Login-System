@@ -147,6 +147,29 @@ namespace kttools
         }
         return low + rand() % (1 + high - low);
     }
+
+    bool isUppercase(char c)
+    {
+        return c >= 'A' && c <= 'Z';
+    }
+
+    bool isLowercase(char c)
+    {
+        return c >= 'a' && c <= 'z';
+    }
+
+    bool isDigit(char c)
+    {
+        return c >= '0' && c <= '9';
+    }
+
+    bool isLetter(char c)
+    {
+        return isUppercase(c) || isLowercase(c);
+    }
+
+
+
 }
 
 

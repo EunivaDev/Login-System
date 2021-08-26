@@ -10,9 +10,13 @@ the system will return their personal information.
 #include <string>
 
 #include "tools.cpp"
+#include "Person.cpp"
+#include "register.cpp"
 
 using namespace std;
 using namespace kttools;
+using namespace ktregister;
+
 
 void mainRegister();
 void mainLogin();
@@ -54,7 +58,16 @@ int main()
 
 void mainRegister()
 {
-    
+    string username, password;
+    cout << endl;
+    cout << "\t Registration" << endl;
+    cout << "\t" << string(25, char(205)) << endl;
+    setUsername(username);
+    setPassword(password);
+
+    cout << "\tYour username is: " << username << endl;
+    cout << "\tYour password is: " << password << endl;
+
 }
 
 void mainLogin()
