@@ -68,6 +68,8 @@ void mainRegister()
     cout << "\tYour username is: " << username << endl;
     cout << "\tYour password is: " << password << endl;
 
+    setUserInformation(username, password);
+
 }
 
 void mainLogin()

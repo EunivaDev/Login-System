@@ -5,9 +5,11 @@
 
 #include "tools.h"
 #include "register.h"
+#include "Person.cpp"
 
 using namespace std;
 using namespace kttools;
+
 
 namespace ktregister
 {
@@ -63,6 +65,12 @@ namespace ktregister
 
     void setUserInformation(string username, string password)
     {
-        
+        Person P;
+        P.setName(getString("\tPlease enter your name: "));
+        P.setAge(getPositiveInt("\tPlease enter your age: "));
+        P.setID(getString("\tPlease enter your ID (123-456-7890): "));
+        P.setBirthDate(getString("\tPlease enter your birthdate (MM/DD/YYYY): "));
+        P.setOccupation(getString("\tPlease enter your occupation: "));
+
     }
 }
